@@ -199,7 +199,6 @@ export async function action({ request }: ActionFunctionArgs) {
 
 interface FieldErrors {
   name?: string;
-  email?: string;
 }
 
 export default function Folders() {
