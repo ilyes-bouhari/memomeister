@@ -189,8 +189,6 @@ export async function action({ request }: ActionFunctionArgs) {
       .toPromise()
       .catch((error) => console.log(error));
 
-    await new Promise((r) => setTimeout(r, 2000));
-
     return null;
   }
 
