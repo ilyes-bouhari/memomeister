@@ -4,8 +4,6 @@ import { Client, fetchExchange } from 'urql';
 const API_KEY = import.meta.env.VITE_API_KEY;
 const httpUrl = 'https://api.memomeister.com/graphql';
 
-console.log(API_KEY)
-
 const client = new Client({
   url: httpUrl,
   fetchOptions: () => {

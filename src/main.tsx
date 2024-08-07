@@ -15,14 +15,12 @@ const router = createBrowserRouter([
     path: "/",
     element: <Root />,
     loader: rootLoader,
-    shouldRevalidate: () => true,
     children: [
       {
         path: "/folders/:folderId?",
         element: <Folders />,
         loader: foldersLoader,
         action: foldersAction,
-        shouldRevalidate: () => true,
       },
     ],
   },
